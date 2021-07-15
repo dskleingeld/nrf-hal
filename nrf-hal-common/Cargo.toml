@@ -49,6 +49,7 @@ version = "0.9.0"
 [dependencies.nrf52832-pac]
 optional = true
 version = "0.9.0"
+git = "https://github.com/dskleingeld/nrf52832-pac.git"
 
 [dependencies.nrf52833-pac]
 optional = true

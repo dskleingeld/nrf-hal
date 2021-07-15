@@ -2,11 +2,11 @@
 //!
 //! The pulse with modulation (PWM) module enables the generation of pulse width modulated signals on GPIO.
 
+#[cfg(not(any(feature = "52810", feature = "52811", feature = "52832")))]
+use crate::pac::PWM3;
 #[cfg(not(any(feature = "52810", feature = "52811")))]
-use crate::{
-    pac::PWM3,
-    pac::{PWM1, PWM2},
-};
+use crate::pac::{PWM1, PWM2};
+
 use crate::{
     gpio::{Output, Pin, PushPull},
     pac::{generic::Reg, pwm0::*, Interrupt, PWM0},

@@ -15,7 +15,8 @@ license = "MIT OR Apache-2.0"
 edition = "2018"
 
 [dependencies]
-nrf52832-pac = "0.9.0"
+# nrf52832-pac = "0.9.0"
+nrf52832-pac = {git = "https://github.com/dskleingeld/nrf52832-pac.git"}
 
 [dependencies.nrf-hal-common]
 path = "../nrf-hal-common"
